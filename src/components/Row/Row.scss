@@ -1,0 +1,12 @@
+@import '../../styles/variables';
+
+.regrid-row {
+  display: inline-flex;
+  max-width: 100%;
+  min-width: 100%;
+  background-color: #dcdcdc;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

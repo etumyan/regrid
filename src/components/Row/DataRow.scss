@@ -1,0 +1,30 @@
+@import '../../styles/variables';
+@import './Row.scss';
+
+.regrid-row_type_data {
+  margin-bottom: 1px;
+  min-height: 34px;
+
+  &:nth-child(even) .regrid-cell {
+    background-color: #fbfbfb;
+  }
+
+  &.regrid-row_selected {
+    background-color: #b9ddff;
+    box-shadow: 0 -1px 0 #b9ddff,
+                0 1px 0 #b9ddff;
+
+    .regrid-cell {
+      background-color: #dceeff;
+    }
+  }
+
+  &:last-child {
+    flex-grow: 1;
+    min-height: 0;
+
+    .regrid-cell {
+      padding: 0;
+    }
+  }
+}

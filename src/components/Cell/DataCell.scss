@@ -1,0 +1,11 @@
+@import '../../styles/variables';
+@import './Cell.scss';
+
+.regrid-cell_type_data {
+  background-color: #fff;
+
+  a {
+    color: #208cd0;
+    text-decoration: none;
+  }
+}
