@@ -1,9 +1,0 @@
-global:
-  english: English
-  russian: Русский
-nav:
-  overview: Overview
-  docs: Docs
-pages:
-  home:
-    headline: Lightweight performance efficient<br>data grid component for React

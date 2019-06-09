@@ -13,20 +13,12 @@
       <header class="header container">
         <div class="logo">regrid</div>
         <nav class="nav">
-          <a class="nav__item nav__item_active" href="/">{% t nav.overview %}</a>
           <a class="nav__item" href="https://github.com/etumyan/regrid" target="_blank" rel="noopener noreferrer">GitHub</a>
-          {% if site.lang == "en" %}
-            {% capture link1 %}{{ site.baseurl_root }}/ru{{ page.url }}{% endcapture %}
-            <a class="nav__item" href="{{ link1 }}" >{% t global.russian %}</a>
-          {% elsif site.lang == "ru" %}
-            {% capture link2 %}{{ site.baseurl_root }}{{ page.url }}{% endcapture %}
-            <a class="nav__item" href="{{ link2 }}" >{% t global.english %}</a>
-          {% endif %}
         </nav>
       </header>
       <div class="container">
         <h1 class="intro__headline">
-          {% t pages.home.headline %}
+          Lightweight performance efficient<br>data grid component for React
         </h1>
       </div>
     </div>
@@ -71,6 +63,8 @@ const data = [{
           <li>
             Include the component<br>
 {% highlight jsx %}
+// some other code
+
 <Regrid
   dataSource={data}
   columns={[{
@@ -81,6 +75,8 @@ const data = [{
     caption: 'Last name'
   }]}
 />
+
+// some other code
 {% endhighlight %}
           </li>
         </ol>
