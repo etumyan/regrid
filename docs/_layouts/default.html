@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="{{ site.lang }}">
+  <head>
+    <meta charset="utf-8">
+    <title>Regrid &ndash; data grid component for React</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis&display=swap">
+    <link rel="stylesheet" href="{{ '/assets/vendor/normalize.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/vendor/son-of-obsidian.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  </head>
+  <body>
+    <div class="intro">
+      <header class="header container">
+        <div class="logo">regrid</div>
+        <nav class="nav">
+          <a class="nav__item nav__item_active" href="/">{% t nav.overview %}</a>
+          <a class="nav__item" href="https://github.com/etumyan/regrid" target="_blank" rel="noopener noreferrer">GitHub</a>
+          {% if site.lang == "en" %}
+            {% capture link1 %}{{ site.baseurl_root }}/ru{{ page.url }}{% endcapture %}
+            <a class="nav__item" href="{{ link1 }}" >{% t global.russian %}</a>
+          {% elsif site.lang == "ru" %}
+            {% capture link2 %}{{ site.baseurl_root }}{{ page.url }}{% endcapture %}
+            <a class="nav__item" href="{{ link2 }}" >{% t global.english %}</a>
+          {% endif %}
+        </nav>
+      </header>
+      <div class="container">
+        <h1 class="intro__headline">
+          {% t pages.home.headline %}
+        </h1>
+      </div>
+    </div>
+    <main class="container text">
+      <h2 class="text-heading">
+        <span class="text-heading__inner">Getting started</span>
+      </h2>
+      <section>
+        <h3>Installation</h3>
+Regrid is available on npm and can be installed from the command line via npm or yarn:
+{% highlight console %}
+npm i regridjs --save
+{% endhighlight %}
+
+or
+
+{% highlight console %}
+yarn add regridjs
+{% endhighlight %}
+
+      </section>
+      <section>
+        <h3>Usage</h3>
+
+        <ol>
+          <li>
+            Import the package<br>
+{% highlight js %}
+import Regrid from 'regridjs';
+{% endhighlight %}
+          </li>
+          <li>
+            Define an array with some data<br>
+{% highlight js %}
+const data = [{
+  id: 1,
+  firstName: 'John',
+  lastName: 'Smith'
+}, ...];
+{% endhighlight %}
+          </li>
+          <li>
+            Include the component<br>
+{% highlight jsx %}
+<Regrid
+  dataSource={data}
+  columns={[{
+    key: 'firstName',
+    caption: 'First name'
+  }, {
+    key: 'lastName',
+    caption: 'Last name'
+  }]}
+/>
+{% endhighlight %}
+          </li>
+        </ol>
+      </section>
+    </main>
+    <footer class="footer container">
+      <p>
+        Released under the <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener noreferrer">MIT License</a>
+      </p>
+      <p>Copyright &copy; 2019 Andrey Etumyan</p>
+    </footer>
+  </body>
+</html>

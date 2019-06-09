@@ -1,0 +1,9 @@
+global:
+  english: English
+  russian: Русский
+nav:
+  overview: Обзор
+  docs: Документация
+pages:
+  home:
+    headline: Легкий и быстрый компонент таблицы<br>для приложений на React
