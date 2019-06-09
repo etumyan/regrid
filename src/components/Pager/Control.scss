@@ -1,0 +1,23 @@
+@import '../../styles/variables';
+
+.regrid-pager__control {
+  display: inline-block;
+  margin-right: 4px;
+  padding: 4px;
+  min-width: 28px;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #e1e1e1;
+  border-radius: 3px;
+  user-select: none;
+  cursor: pointer;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &_disabled {
+    opacity: .45;
+    cursor: default;
+  }
+}

@@ -1,0 +1,19 @@
+@import '../styles/variables';
+
+.regrid-body {
+  overflow: auto;
+  background-color: #fbfbfb;
+  border-width: 1px;
+  border-style: solid;
+  border-color: $line-color;
+  z-index: 10;
+
+  &__inner {
+    display: inline-flex;
+    flex-direction: column;
+    min-height: 100%;
+    background-color: $line-color;
+    box-shadow: 0 1px 0 $line-color,
+                0 -1px 0 $line-color;
+  }
+}

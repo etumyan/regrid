@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DataCell renders correctly 1`] = `
+<div
+  className="regrid-cell regrid-cell_type_data regrid-cell_key_id"
+  dangerouslySetInnerHTML={
+    Object {
+      "__html": "",
+    }
+  }
+/>
+`;

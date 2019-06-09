@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeaderCell renders correctly 1`] = `
+<div
+  className="regrid-cell regrid-cell_type_header regrid-cell_id_id"
+  onClick={[Function]}
+/>
+`;

@@ -1,0 +1,37 @@
+@import '../../styles/variables';
+
+.regrid-cell {
+  flex-grow: 1;
+  flex-basis: 0;
+  margin-right: 1px;
+  padding: 8px;
+  min-width: 0;
+  width: auto;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  cursor: default;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &_fixed-width {
+    flex: 0 0 auto; // #TODO hack for defaults
+  }
+
+  &_align_start {
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+  &_align_center {
+    justify-content: center;
+    text-align: center;
+  }
+
+  &_align_end {
+    justify-content: flex-end;
+    text-align: right;
+  }
+}
