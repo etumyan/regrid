@@ -75,7 +75,7 @@ h4 {
   height: 100px;
   text-indent: -9999px;
   /* background-position here is a hack to compensate not perfect horizontal aligment */
-  background: url('assets/images/logo.svg') 2px 0 no-repeat;
+  background: url('../images/logo.svg') 2px 0 no-repeat;
   background-size: contain;
   opacity: .95;
 }
